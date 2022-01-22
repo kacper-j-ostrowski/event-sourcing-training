@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
         <module>core</module>
-		<module>api</module>
-		<module>adapters</module>
-		<module>app</module>
-	</modules>
+        <module>api</module>
+        <module>adapters</module>
+        <module>app</module>
+    </modules>
     <parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.6.3</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-	<groupId>pl.ostrowski</groupId>
-	<artifactId>match-scoring-system</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>match-scoring-system</name>
-	<description>Training project for event sourcing and CQRS</description>
-	<properties>
-		<java.version>17</java.version>
-	</properties>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.3</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>pl.ostrowski</groupId>
+    <artifactId>match-scoring-system</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>match-scoring-system</name>
+    <description>Training project for event sourcing and CQRS</description>
+    <properties>
+        <java.version>17</java.version>
+        <org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
+    </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${org.mapstruct.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

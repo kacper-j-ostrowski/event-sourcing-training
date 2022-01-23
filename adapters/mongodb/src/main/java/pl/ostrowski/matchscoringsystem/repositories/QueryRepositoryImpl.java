@@ -1,7 +1,7 @@
 package pl.ostrowski.matchscoringsystem.repositories;
 
 import lombok.RequiredArgsConstructor;
-import pl.ostrowski.matchscoringsystem.EntityMapper;
+import pl.ostrowski.matchscoringsystem.mapper.EntityMapper;
 import pl.ostrowski.matchscoringsystem.documents.MatchDocument;
 import pl.ostrowski.matchscoringsystem.model.Match;
 import pl.ostrowski.matchscoringsystem.model.Team;

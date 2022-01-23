@@ -1,4 +1,4 @@
-package pl.ostrowski.matchscoringsystem;
+package pl.ostrowski.matchscoringsystem.mapper;
 
 import org.mapstruct.Mapper;
 import pl.ostrowski.matchscoringsystem.documents.MatchDocument;

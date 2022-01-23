@@ -1,16 +1,20 @@
 package pl.ostrowski.matchscoringsystem.documents;
 
+import lombok.Builder;
+import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.UUID;
 
-@Document
-public record TeamDocument(
+@Data
+@Builder
+@Document(collection = "teams")
+public class TeamDocument {
         @Id
-        UUID id,
-        String name,
-        String city,
-        String stadium
-) {
+        @Builder.Default
+        private UUID id = UUID.randomUUID();
+        private String name;
+        private String city;
+        private String stadium;
 }

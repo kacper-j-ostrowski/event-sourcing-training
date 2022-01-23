@@ -1,13 +1,16 @@
 package pl.ostrowski.matchscoringsystem.model;
 
-public record TablePosition(
-        Team team,
-        int totalPoints,
-        int position,
-        int matchesWon,
-        int matchesDraw,
-        int matchesLost,
-        int scoredGoals,
-        int lostGoals
-) {
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
+public class TablePosition {
+    private Team team;
+    private int totalPoints;
+    private int matchesWon;
+    private int matchesDraw;
+    private int matchesLost;
+    private int scoredGoals;
+    private int lostGoals;
 }

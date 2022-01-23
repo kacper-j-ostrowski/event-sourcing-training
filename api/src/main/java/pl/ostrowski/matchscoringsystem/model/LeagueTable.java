@@ -1,8 +1,8 @@
 package pl.ostrowski.matchscoringsystem.model;
 
-import java.util.List;
+import java.util.Map;
 
 public record LeagueTable(
-        List<TablePosition> positions
+        Map<Integer, TablePosition> positions
 ) {
 }

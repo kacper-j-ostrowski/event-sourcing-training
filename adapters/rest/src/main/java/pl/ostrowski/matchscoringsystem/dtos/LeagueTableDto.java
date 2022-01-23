@@ -1,4 +1,8 @@
 package pl.ostrowski.matchscoringsystem.dtos;
 
-public record LeagueTableDto() {
+import java.util.Map;
+
+public record LeagueTableDto(
+        Map<Integer, TablePositionDto> positions
+) {
 }

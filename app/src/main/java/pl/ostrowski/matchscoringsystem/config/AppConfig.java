@@ -11,6 +11,7 @@ import pl.ostrowski.matchscoringsystem.repositories.QueryRepositoryImpl;
 import pl.ostrowski.matchscoringsystem.services.LeagueTableServiceImpl;
 import pl.ostrowski.matchscoringsystem.services.MatchServiceImpl;
 import pl.ostrowski.matchscoringsystem.services.TeamServiceImpl;
+import pl.ostrowski.matchscoringsystem.strategies.TotalStatisticsCalculator;
 
 @EnableMongoAuditing
 @Configuration
@@ -22,7 +23,8 @@ import pl.ostrowski.matchscoringsystem.services.TeamServiceImpl;
         QueryRepositoryImpl.class,
         TeamServiceImpl.class,
         MatchServiceImpl.class,
-        LeagueTableServiceImpl.class
+        LeagueTableServiceImpl.class,
+        TotalStatisticsCalculator.class
 })
 public class AppConfig {
 }
